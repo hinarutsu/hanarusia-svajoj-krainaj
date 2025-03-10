@@ -29,7 +29,6 @@ header .container {
     color: black;
 }
 
-/* Навигация с анимацией */
 nav ul {
     list-style: none;
     display: flex;
@@ -70,7 +69,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Секция героя */
 .hero {
     background: url('banner.jpg') no-repeat center;
     background-size: cover;
@@ -87,10 +85,8 @@ nav ul li a:hover::after {
     font-size: 48px;
     font-weight: bold;
     color: white; 
-    text-align: center;
-    padding: 10px 20px;
-    display: inline-block;
     background: rgba(0, 0, 0, 0.3); 
+    padding: 10px 20px;
     border-radius: 10px; 
     margin-bottom: 20px; 
 }
@@ -98,10 +94,8 @@ nav ul li a:hover::after {
 .hero p {
     font-size: 20px;
     margin-bottom: 20px;
-    text-align: center;
-    padding: 10px 20px;
-    display: inline-block;
     background: rgba(0, 0, 0, 0.3); 
+    padding: 10px 20px;
     border-radius: 10px; 
 }
 
@@ -119,7 +113,6 @@ nav ul li a:hover::after {
     background: #a81515;
 }
 
-/* Общие стили для разделов */
 .history, .vitebsk, .quality, .vitebsk_today {
     padding: 60px 20px;
     text-align: center;
@@ -161,6 +154,7 @@ footer {
     right: 0;
 }
 
+/* Адаптация для планшетов и телефонов */
 @media (max-width: 768px) {
 
     .container {
@@ -177,6 +171,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        padding-left: 0;
     }
 
     .logo {
@@ -217,6 +212,7 @@ footer {
     }
 }
 
+/* Адаптация для телефонов до 480px */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 24px;
